@@ -8,11 +8,11 @@ int main(int argc, char *argv[]) {
     
     for (int i = 0; i < N; i++) scanf("%lf", &a[i]);
     
-    // Сдвигаем элементы вправо начиная с позиции K
+    
     for (int i = N - 1; i > k; i--) 
         a[i] = a[i - 1];
     
-    a[k] = x; // Вставляем X на позицию K
+    a[k] = x; 
     
     for (int i = 0; i < N; i++) 
         printf("%.0f ", a[i]);

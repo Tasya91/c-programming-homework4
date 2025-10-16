@@ -1,20 +1,19 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
     double numbers[10];
     double sum = 0.0;
-    
     
     for (int i = 0; i < 10; i++) {
         scanf("%lf", &numbers[i]);
         sum += numbers[i];
     }
     
-    
     double average = sum / 10.0;
     
     
-    printf("%.2f\n", average);
+    printf("%.2f\n", round(average * 100) / 100);
     
     return 0;
 }

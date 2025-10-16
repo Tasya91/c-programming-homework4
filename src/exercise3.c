@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
     
     for (int i = 0; i < N; i++) scanf("%lf", &a[i]);
     
-    k = ((k % N) + N) % N; // Нормализация K
+    k = ((k % N) + N) % N; 
     
     for (int i = 0; i < N; i++) 
         r[(i + k) % N] = a[i];
