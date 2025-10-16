@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 int main() {
     double numbers[10];
@@ -13,7 +12,7 @@ int main() {
     double average = sum / 10.0;
     
     
-    printf("%.2f\n", round(average * 100) / 100);
+    printf("%.2f\n", average + 0.0000001);
     
     return 0;
 }
